@@ -1,3 +1,5 @@
+//ToDo look up stuff i don't know.
+
 if (!process.env.PORT) {
   require('dotenv').config()
   process.env.NODE_ENV = "dev"
