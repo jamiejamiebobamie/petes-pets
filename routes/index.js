@@ -12,6 +12,3 @@ app.get('/', (req, res) => {
   });
 });
 }
-
-
-/* GET home page. */
