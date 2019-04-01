@@ -20,6 +20,22 @@ mongoose.connect('mongodb://localhost/petes-pets');
 
 app.locals.PUBLIC_STRIPE_API_KEY = process.env.PUBLIC_STRIPE_API_KEY
 
+// server.js
+// require our mailgun dependencies
+const nodemailer = require('nodemailer');
+const mg = require('nodemailer-mailgun-transport');
+
+// auth with our mailgun API key and domain
+const auth = {
+  auth: {
+    api_key: 'key-keyaldkjfadfasdfadsfadsf',
+    domain: 'domain.com'
+  }
+}
+
+// create a mailer
+const nodemailerMailgun = nodemailer.createTransport(mg(auth));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
