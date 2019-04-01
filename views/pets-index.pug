@@ -5,7 +5,9 @@ block content
     each pet, index in pets
       .col-sm-4.justify-content-center
         .card
-          img.card-img-top(src=pet.picUrl, alt='Card image cap')
+        .form-group
+            label Avatar*
+            input.form-control(name="avatar" type="file" required)
           .card-body
             h4.card-title= pet.name
             small.text-muted= pet.species
