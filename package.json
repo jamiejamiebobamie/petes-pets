@@ -11,6 +11,7 @@
     "debug": "~2.6.9",
     "dotenv": "^4.0.0",
     "express": "^4.16.4",
+    "limiter": "^1.1.4",
     "method-override": "^2.3.10",
     "mongoose": "^5.1.1",
     "mongoose-paginate": "^5.0.3",
@@ -26,6 +27,8 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
     "mocha": "^5.2.0"
   }
 }
